@@ -13,6 +13,7 @@
 		37511DBF1C596EB600EDE554 /* essence_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37511DBD1C596EB600EDE554 /* essence_ios.xcdatamodeld */; };
 		37511DC11C596EB600EDE554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37511DC01C596EB600EDE554 /* Assets.xcassets */; };
 		37511DC41C596EB600EDE554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37511DC21C596EB600EDE554 /* LaunchScreen.storyboard */; };
+		7F056084B87402C84110D712 /* Pods_essence_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A701C3478A2A48CF45CE763 /* Pods_essence_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		37511DC01C596EB600EDE554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37511DC31C596EB600EDE554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37511DC51C596EB600EDE554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420B4727400C23B4677EBFFC /* Pods-essence-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-essence-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-essence-ios/Pods-essence-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		4EEFF3DB4D555E08D694441F /* Pods-essence-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-essence-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-essence-ios/Pods-essence-ios.release.xcconfig"; sourceTree = "<group>"; };
+		5A701C3478A2A48CF45CE763 /* Pods_essence_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_essence_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F056084B87402C84110D712 /* Pods_essence_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				37511DB51C596EB600EDE554 /* essence-ios */,
 				37511DB41C596EB600EDE554 /* Products */,
+				397C1B32A948095E11D674A2 /* Pods */,
+				3C0DDBA8A1D8073434A5A96B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "essence-ios";
 			sourceTree = "<group>";
 		};
+		397C1B32A948095E11D674A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				420B4727400C23B4677EBFFC /* Pods-essence-ios.debug.xcconfig */,
+				4EEFF3DB4D555E08D694441F /* Pods-essence-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3C0DDBA8A1D8073434A5A96B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A701C3478A2A48CF45CE763 /* Pods_essence_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37511DC81C596EB600EDE554 /* Build configuration list for PBXNativeTarget "essence-ios" */;
 			buildPhases = (
+				DEF6D14E542D60C3B6EF663D /* Check Pods Manifest.lock */,
 				37511DAF1C596EB600EDE554 /* Sources */,
 				37511DB01C596EB600EDE554 /* Frameworks */,
 				37511DB11C596EB600EDE554 /* Resources */,
+				A76EDD2B1115979AD0B50AAC /* Embed Pods Frameworks */,
+				8ED64CDEE0E2D38D686A4ADC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ED64CDEE0E2D38D686A4ADC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-essence-ios/Pods-essence-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A76EDD2B1115979AD0B50AAC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-essence-ios/Pods-essence-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF6D14E542D60C3B6EF663D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37511DAF1C596EB600EDE554 /* Sources */ = {
@@ -252,6 +327,7 @@
 		};
 		37511DC91C596EB600EDE554 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420B4727400C23B4677EBFFC /* Pods-essence-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "essence-ios/Info.plist";
@@ -263,6 +339,7 @@
 		};
 		37511DCA1C596EB600EDE554 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEFF3DB4D555E08D694441F /* Pods-essence-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "essence-ios/Info.plist";
@@ -291,6 +368,7 @@
 				37511DCA1C596EB600EDE554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
